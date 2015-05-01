@@ -1,0 +1,117 @@
+%# -*- coding:utf-8 -*-
+%% start of file `template-zh.tex'.
+%% Copyright 2006-2012 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+      
+      
+\documentclass[12pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+      
+% moderncv 主题
+\moderncvstyle{classic}                        % 选项参数是 ‘casual’, ‘classic’, ‘oldstyle’ 和 ’banking’
+\moderncvcolor{orange}                          % 选项参数是 ‘blue’ (默认)、‘orange’、‘green’、‘red’、‘purple’ 和 ‘grey’
+%\nopagenumbers{}                             % 消除注释以取消自动页码生成功能
+      
+% 字符编码
+\usepackage{fontspec,xunicode}
+      
+% 设置字体
+\usepackage{xeCJK}                            % 使用xelatex的CJK包
+\xeCJKsetup{
+    AutoFakeBold=true,                        % AutoFakeBold在未设置粗体时使用伪粗体
+    AutoFakeSlant=false,                       % AutoFakeSlant在未设置斜体时使用伪斜体
+}
+\setCJKmainfont{WenQuanYi Micro Hei}          % 设置正文罗马族的 CJK 字体
+      
+% 调整页面出血
+\usepackage[scale=0.92]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}           % 如果你希望改变日期栏的宽度
+      
+% 个人信息
+\firstname{赵}
+\familyname{泽涵}
+\address{10029 北京市朝阳区惠新东街10号}{对外经济贸易大学汇智公寓457室}             % 可选项、如不需要可删除本行
+\mobile{+86~185~0195~9574}                         % 可选项、如不需要可删除本行
+\email{cnallenzhao@gmail.com}                    % 可选项、如不需要可删除本行
+%\photo[60pt][0pt]{allenzhao}    
+\social[github]{allenzhao} 
+\social[linkedin]{zehanzhao}   
+%\github{allenzhao}
+\title{个人简历}              % ‘64pt’是图片必须压缩至的高度、‘0.4pt‘是图片边框的宽度 (如不需要可调节至0pt)、’picture‘ 是图片文件的名字;可选项、如不需要可删除本行
+      
+% 显示索引号;仅用于在简历中使用了引言
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+      
+% 分类索引
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            内容
+%----------------------------------------------------------------------------------
+\usepackage[unicode,pdfencoding=auto]{hyperref} % 避免由hyperref引起的警告
+\begin{document}
+\maketitle
+\renewcommand{\listitemsymbol}{-}             % 改变列表符号
+      
+\section{教育背景}
+\cventry{2011年-今}{管理学学士}{信息学院电子商务专业}{对外经济贸易大学}{北京}{
+核心课:宏微观经济学, 程序设计 (C), 数据库系统, 软件开发工具, 面向对象程序设计 (Java), 电子商务 系统建设与实施, 数据结构, 计算机网络, 高级商务英语等}
+\cventry{2015.9}{管理科学与工程硕士}{经济管理学院}{清华大学}{北京}{}
+\section{IT技能及英语能力}
+\cvlistitem{~1年PHP开发经验；半年Ruby on Rails 开发经验。会写 HTML/CSS,常用 JS(jQuery)，熟悉Git(GitHub)/SVN，日常使用 OS X 进行开发。}
+\cvlistitem{ ~英语水平：流利地读写，听力及口语能力良好，交流无障碍。CET4:616，CET6:602。}
+\section{自我评价}
+\cvitem{}{性格积极乐观,做事认真,责任心强,学习能力强,能够较快的适应新环境、学习新事物,热爱团队合作,有创造力,乐于迎接挑战,并且坚持不懈。}
+
+\section{工作经验与项目经历}
+
+\cventry{2015年1月 - 6月}{实习全栈工程师}{华兴资本}{北京}{}{
+主要职责:
+\begin{itemize}
+\item 在Tech组负责协助设计并实现面向内部及外部的平台
+\item 使用Ruby on Rails完成开发，编写测试
+\item 在工作中实践多种敏捷方法，如Scrum, User Story等
+\end{itemize}}
+
+\cventry{2014年5月 - 8月}{2014 谷歌编程之夏学生 (GSoC 2014 Student)}{Joomla 开源基金会}{远程工作}{}{
+主要职责:
+\begin{itemize}
+\item 入选 Google SoC Student(8 人,共 34 人申请),为 Joomla 开源基金会旗下的 Issue Tracker 贡献代码
+\item 设计并实现 AJAX 读取列表,设计并实现 Issue 分类功能
+\item 帮助 Joomla Issue Tracker 完成本地化。与其他开发者协作,预计项目结束后发布 1.0 版本
+\end{itemize}}
+
+\cventry{2014年1月 - 6月}{PHP 开发工程师(实习)}{腾讯网儿童频道}{北京}{}{
+主要职责:
+\begin{itemize}
+\item 开发和维护频道某产品,协助产品经理完成需求分析
+\item 独立开发管理平台新功能,设计复杂数据库结构,帮助维护管理平台,应对用户量增长
+\item 开发并重构与 Flash 交互的 API,提高响应速度。在职期间,用户量从 420 万增长到 530 万
+\end{itemize}}
+
+\section{获奖情况}
+\cvlistitem{2013年华北五省计算机应用大赛本科组三等奖}
+\cvlistitem{2013经纬杯创业比赛优胜奖}
+      
+      
+% 来自BibTeX文件但不使用multibib包的出版物
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% BibTeX的数字标签
+% 'publications' 是BibTeX文件的文件名
+      
+% 来自BibTeX文件并使用multibib包的出版物
+%\section{出版物}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}               % 'publications' 是BibTeX文件的文件名
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}               % 'publications' 是BibTeX文件的文件名
+      
+\end{document}
+      
+      
+%% 文件结尾 `template-zh.tex'.
